@@ -95,7 +95,7 @@ img {
 }
 
 .container {
-  padding-top: 1.3rem;
+  height: 120px;
   @include dflex("between-center");
 }
 
@@ -108,10 +108,22 @@ ul {
     font-weight: bold;
     font-size: 0.8rem;
 
+    li > a::after {
+      content: "";
+      display: block;
+      margin: auto;
+      height: 3px;
+      width: 0;
+      top: 5px;
+      background: transparent;
+      transition: all 0.3s;
+    }
+
     &.active,
     &:hover {
-      border-bottom: 5px solid $skyblue;
-      color: $skyblue;
+      // border-bottom: 5px solid $skyblue;
+      background-color: $skyblue;
+      width: 100%;
     }
   }
 }

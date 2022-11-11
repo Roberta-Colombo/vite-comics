@@ -39,6 +39,7 @@ ul {
   h4 {
     text-transform: uppercase;
     padding-bottom: 0.8rem;
+    font-size: 1.2rem;
   }
 }
 </style>
