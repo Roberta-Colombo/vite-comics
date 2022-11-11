@@ -19,3 +19,12 @@ img{
     width: 70%;
     margin: 0 auto;
 }
+
+ul {
+    list-style: none;
+    display: flex;
+
+    li a {
+        text-decoration: none;
+    }
+}
