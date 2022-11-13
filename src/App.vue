@@ -1,41 +1,45 @@
 <template>
   <header>
-    <HeaderComponent/>
+    <HeaderComponent />
   </header>
 
+  <div>
+    <JumbotronComponent />
+  </div>
+
   <main>
-    <MainComponent/>
+    <MainComponent />
   </main>
 
   <section>
-    <BlueBarComponent/>
+    <BlueBarComponent />
   </section>
 
   <footer>
-    <FooterTopComponent/>
+    <FooterTopComponent />
 
-    <FooterBottomComponent/>
+    <FooterBottomComponent />
   </footer>
 </template>
 
 <script>
-import HeaderComponent from './components/HeaderComponent.vue';
-import MainComponent from './components/MainComponent.vue';
-import BlueBarComponent from './components/BlueBarComponent.vue';
-import FooterTopComponent from './components/FooterTopComponent.vue';
-import FooterBottomComponent from './components/FooterBottomComponent.vue';
+import HeaderComponent from "./components/HeaderComponent.vue";
+import MainComponent from "./components/MainComponent.vue";
+import BlueBarComponent from "./components/BlueBarComponent.vue";
+import FooterTopComponent from "./components/FooterTopComponent.vue";
+import FooterBottomComponent from "./components/FooterBottomComponent.vue";
+import JumbotronComponent from "./components/JumbotronComponent.vue";
 
-  export default {
-    components: { 
+export default {
+  components: {
     HeaderComponent,
     MainComponent,
     BlueBarComponent,
     FooterTopComponent,
-    FooterBottomComponent
-    }
-  }
+    FooterBottomComponent,
+    JumbotronComponent,
+  },
+};
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

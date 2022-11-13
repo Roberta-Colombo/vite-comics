@@ -101,28 +101,20 @@ img {
 
 ul {
   li a {
+    line-height: 120px;
     text-transform: uppercase;
     display: inline-block;
-    padding: 0.8rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
     color: $darkgrey;
     font-weight: bold;
     font-size: 0.8rem;
-
-    li > a::after {
-      content: "";
-      display: block;
-      margin: auto;
-      height: 3px;
-      width: 0;
-      top: 5px;
-      background: transparent;
-      transition: all 0.3s;
-    }
+    height: 120px;
 
     &.active,
     &:hover {
-      // border-bottom: 5px solid $skyblue;
-      background-color: $skyblue;
+      color: $skyblue;
+      border-bottom: 5px solid $skyblue;
       width: 100%;
     }
   }
